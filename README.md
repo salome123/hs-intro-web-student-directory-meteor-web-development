@@ -46,7 +46,7 @@ The structure of this project looks something like this:
 
 ## Getting Started
 
-[Fork](https://help.github.com/articles/fork-a-repo) and ![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png) this repo.
+[Fork](https://help.github.com/articles/fork-a-repo) and clone ![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png) this repo.
 
 Take a look at `index.html` and `students/student_name.html` in the browser. You can do this many ways but one is by opening finder and right clicking on index.html. Then click on "Open with" then the name of your favorite browser.
 

@@ -384,10 +384,6 @@ img {
     border-bottom: none;
 }
 
-.error404 .page-title {
-    text-align: center;
-}
-
 .page-title {
     border-bottom: solid 1px #eee;
     padding: 30px 0;
@@ -401,39 +397,6 @@ img {
     display: inline-block;
     width: 100%;
     position: relative;
-}
-
-.portfolio-titles {
-    float: left;
-    width: 75%;
-    display: inline-block;
-}
-
-.project-nav {
-    font-size: 11px;
-    text-transform: uppercase;
-    text-align: right;
-    position: absolute;
-    right: 0;
-    bottom: 30px;
-    width: 25%;
-    margin-top: 15px;
-}
-
-.project-nav a {
-    color: #aaa !important;
-    margin-left: 10px;
-}
-
-.project-nav a:hover { color: #555 !important }
-
-.next-project span {
-    padding-left: 10px;
-    border-left: solid 1px #eee;
-}
-
-.project-nav i {
-    padding: 0 2px;
 }
 
 .page-title a { color: #4c4c4c }
@@ -502,11 +465,11 @@ img {
     padding-bottom: 70px;
 }
 
-.section-services {
+.section-details {
     padding-bottom: 80px;
 }
 
-.section-services.student-index {
+.section-details.student-index {
     padding-bottom: 0px;
 }
 
@@ -514,7 +477,7 @@ img {
     padding-bottom: 45px;
 }
 
-.section-blog {
+.section-students {
     padding-bottom: 30px;
 }
 
@@ -584,9 +547,9 @@ img {
     display: none;
 }
 
-/* ===[ Services Styles ]===================================================== */
+/* ===[ Details Styles ]===================================================== */
 
-.services-wrap {
+.details-wrap {
     display: block;
     float: left;
     margin-left: -4%;
@@ -594,24 +557,24 @@ img {
     max-width: 1020px;
 }
 
-.services-title {
+.details-title {
     float: left;
     width: 75%;
     padding-top: 11px;
 }
 
-.services h3 {
+.details h3 {
     font-size: 14px;
     font-weight: bold;
     line-height: 20px;
     margin-bottom: 0;
 }
 
-.services h3 a { color: #4c4c4c }
+.details h3 a { color: #4c4c4c }
 
-.services h3 a:hover { color: #888 }
+.details h3 a:hover { color: #888 }
 
-.services .service-icon {
+.details .service-icon {
     float: left;
     margin: 0 5% 0 0;
     font-size: 20px;
@@ -630,31 +593,31 @@ img {
     overflow: hidden;
 }
 
-.services p {
+.details p {
     margin: 15px 0 20px 0;
     font-size: 13px;
     border-top: dotted 1px #e6e6e6;
     padding-top: 8px;
 }
 
-.services ul{
+.details ul{
   margin-top: 15px;
   font-size: 13px;
   border-top: dotted 1px #e6e6e6;
   padding-top: 6px;
 }
 
-.services ul li{
+.details ul li{
   border-bottom: dotted 1px #e6e6e6;
   padding: 3px 0 4px 0;
 }
 
-.services h4{
+.details h4{
   font-size: 14px;
   line-height: 0;
   text-decoration: underline
 }
-.services:hover .service-icon {
+.details:hover .service-icon {
     background: #fff666;
     -webkit-transition: .1s ease-in;
     -moz-transition: .1s ease-in;
@@ -662,24 +625,24 @@ img {
     transition: .1s ease-in;
 }
 
-/* ===[ Home Blog Styles ]===================================================== */
+/* ===[ Home Student Styles ]===================================================== */
 
-body.students .home-blog {
+body.students .home-student {
     display: block;
     margin-left: -2.2%;
     max-width: 1020px;
 }
 
-.home-blog-post li{
+.home-student li{
     list-style-type:none;
 }
 
-body.students ul li.home-blog-post{
+body.students ul li.home-student-profile{
     list-style-type:none;
     height: 400px;
 }
 
-.home-blog-post {
+.home-student-profile {
     float: left;
     width: 31%;
     margin: 0 0 5% 2.2%;
@@ -690,55 +653,17 @@ body.students ul li.home-blog-post{
 
 .big-comment h3 { position: relative }
 
-.home-blog-post h3 {
+.home-student h3 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 5px;
 }
 
-.home-blog-post h3 a { color: #4c4c4c }
+.home-student h3 a { color: #4c4c4c }
 
-.home-blog-post h3 a:hover { color: #888 }
+.home-student h3 a:hover { color: #888 }
 
-.home-blog-post .excerpt p {
-    font-size: 13px;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-.home-blog-post .blog-text {
-    font-size: 14px;
-    line-height: 26px;
-}
-
-.home-blog-post-meta {
-    text-transform: uppercase;
-    font-size: 10px;
-    color: #aaa;
-    line-height: 16px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 1px #eee;
-}
-
-.home-blog-post .blog-thumb {
-    margin: -31px -31px 25px -31px;
-    -webkit-transition: .1s ease-in;
-    -moz-transition: .1s ease-in;
-    -o-transition: .1s ease-in;
-    transition: .1s ease-in;
-    position: relative;
-    overflow: hidden;
-    height: 310px;
-}
-
-.home-blog-post .blog-thumb img {
-    max-width: 100%;
-    min-width: 100%;
-    height: auto;
-}
-
-.home-blog-post img:hover {
+.home-student img:hover {
     opacity: .9;
     -webkit-transition: .1s ease-in;
     -moz-transition: .1s ease-in;
@@ -746,7 +671,7 @@ body.students ul li.home-blog-post{
     transition: .1s ease-in;
 }
 
-.home-blog-right {
+.home-student-right {
     float: right;
     width: 300px;
 }
@@ -853,7 +778,7 @@ body.students ul li.home-blog-post{
 /*==[ Styles for Student Profile ] - from desmond.css
 ===================================================== */
 
-.ib_main_header {
+.main_header {
   padding: 0;
   margin-top: 30px;
   font-size: 40px;
@@ -976,7 +901,7 @@ body.students ul li.home-blog-post{
     border-bottom: solid 1px #eee;
 }
 
-.services h3 {
+.details h3 {
     font-size: 18px;
     font-weight: bold;
     line-height: 20px;
@@ -985,13 +910,13 @@ body.students ul li.home-blog-post{
     width: 295px;
 }
 
-.services first-child {
+.details first-child {
     width: 100%;
     padding-top: none;
     border-top: none;
 }
 
-.services {
+.details {
   width: 100%;
 }
 
@@ -999,19 +924,6 @@ body.students ul li.home-blog-post{
   text-align: right;
   font-size: 11px;
   letter-spacing: 1px;
-}
-
-.about-text {
-  width: 500px;
-  margin: 0 auto;
-  padding-bottom: 20px;
-}
-
-.about-text p {
-  font-size: 20px;
-  line-height: 130%;
-  border-top: none;
-
 }
 
 body.students a{color:#60BDDB} /*Causing the social icons to be blue*/
@@ -1024,11 +936,8 @@ body.students a{color:#60BDDB} /*Causing the social icons to be blue*/
 
   /*========================= Index Profile Image ================================*/
 
-.prof-image {
-  border-top: 1px solid #efefef;
-  border-left: 1px solid #efefef;
-  border-right: 1px solid #efefef;
-  border-bottom: 0;
+.student-image {
+  width: 100%;
 }
 
 /*========================= Profile Background Image ================================*/
