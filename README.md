@@ -1,40 +1,14 @@
 ---
-tags: deploy, team, git, pull request
+tags: deploy, team, git, pull request, kids
 languages: html, css
 resources:
 ---
 
-# Deploy on Day One
+## Getting to Know You...
 
-## Contents
+For our first class project, we will be creating a student directory with your very own student profile.
 
-|Section                            |
-|-----------------------------------|
-|[History](#history)                |
-|[Assignment](#assignment)          |
-|[Requirements](#requirements)      |
-|[File Structure](#structure)       |
-|[Getting Started](#getting-started)|
-|[Next Steps](#next-steps)          |
-|[Final Steps](#final-steps)        |
-|[Resources](#resources)            |
-|[Issues](#issues)                  |
-
-## History
-
-Welcome to Flatiron! Every semester, a student index page is created. It looks something like [this](http://students.flatironschool.com/). Links from this page go to individual profiles, which look like [this](http://students.flatironschool.com/students/lauraconwill.html).
-
-## Assignment
-
-Your assignment is to create a student profile for someone sitting at your table. By the end of this project, every student should have a profile for themselves that was created by someone else and every student should have created a profile for someone else. If you're sitting at a table of four, it might be easiest to pair up. If you're sitting at a table of three, it might be easiest to create the profile of the student clockwise to you. If you're sitting at a...well you get the picture.
-
-Now if you're anything like me, you might be freaking out and wondering, "Am I making a webapp?!?!" The answer is no. You're just working with HTML and file structures. You don't need to know Rails, JavaScript, or even Ruby for this project. No need to freak out. Calm down! Seriously, you're making the rest of us nervous!!!
-
-You'll have about three hours to complete the first section of this lab. Use that time to get to know your table, get familiar with git workflows, and re-familiarizing yourself with HTML. If you feel stuck, ask any instructor for help. **Keep in mind everyone in your table will be pushing to the same repository.**  Think about using a workflow with your teammates that will minimize conflicts.
-
-## Requirements
-
-Please collect the following content from your assigned student for their profile. This content doesn't have to be finalized, but you need something. They'll be using this content as the project evolves for their resume and other profiles online.
+Here is the info you'll need for your student profile.
 
 * Name
 * Github Username
@@ -76,7 +50,7 @@ The structure of this project looks something like this:
 ```
 
 ### Files you will need to alter:
-* The only file you'll alter is `index.html`. 
+* The only file you'll alter is `index.html`.
 
 ### Files you will need to add:
 * Add three pictures to the `img/students` folder (they can be jpg or png files):
@@ -105,7 +79,7 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
 
 #### Make a New Branch
 
-* From the root directory, [checkout a new branch](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Branching). This new branch's name should be the name of the student whose profile you're going to create.  
+* From the root directory, [checkout a new branch](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Branching). This new branch's name should be the name of the student whose profile you're going to create.
   * For instance, the branch would be titled `zoe-perez`.
   * Note: The `master` branch of a project is NEVER a place to do any work. `master` is considered the build and you never break the build. So make sure you are not working or committing to the `master` branch.
 
@@ -130,7 +104,7 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
 
 #### Stage and Commit Changes
 
-* Once you're happy with the profile you've created and the changes you've made to the index page, type [git status](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files). The the file you've altered, index.html, should appear in the "Tracked Files" section and the files you've created should appear in the "Untracked Files" section. 
+* Once you're happy with the profile you've created and the changes you've made to the index page, type [git status](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files). The the file you've altered, index.html, should appear in the "Tracked Files" section and the files you've created should appear in the "Untracked Files" section.
 
 * You'll want to [add](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Staging-Modified-Files) then [commit](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Committing-Your-Changes) these changes with a message.
 
@@ -141,15 +115,15 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
 |origin |https://github.com/table-member's-github-name/deploy-on-day-1...git| (fetch) |
 |origin |https://github.com/table-member's-github-name/deploy-on-day-1...git| (push)  |
 
-#### Push Up Your Branch 
+#### Push Up Your Branch
 
-* Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to a remote branch. This remote branch doesn't exist yet, you're going to create it by pushing. 
+* Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to a remote branch. This remote branch doesn't exist yet, you're going to create it by pushing.
   * **NOTE: Do not push to master. Do not type anything that contains the word master!**
   * You're going to push to a branch that is the same name as your local branch.
     * For instance, if we're on the branch zoe-perez, we're going to push to zoe-perez.
 
 * To confirm this push worked you can do two things:
-  * Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed. 
+  * Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed.
   * You could also go to the url of the forked repo. Notice the section that looks like ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png). You should be able to click on that arrow and to see a dropdown. From this dropdown, select the name of the branch you've been working on.
 
 ## Next Steps
@@ -183,7 +157,7 @@ other content here
 >>>>>>> zoe-perez
 ```
 
-Just decide which one you want to keep or if you want to keep both. Then delete the parts you don't want and delete the `<<<<HEAD`, `======`, and `>>>>>` parts. 
+Just decide which one you want to keep or if you want to keep both. Then delete the parts you don't want and delete the `<<<<HEAD`, `======`, and `>>>>>` parts.
 
 Remember, if you have multiple files with merge conflicts, you'll have to repeat this process with each file. Once you're done selecting which code to retain, `git add` and `git commit` these changes. Now when you type `git status`, your terminal should not display "You have unmerged paths."
 
@@ -191,13 +165,13 @@ Remember, if you have multiple files with merge conflicts, you'll have to repeat
 
 Once every profile is on a single branch that is hosted remotely, it's time to submit a pull request on the original repo. Note: This pull request will be on behalf of your entire table.
 
-* The first step is to go to the forked repo. 
-* The next step is to navigate to the branch with all three or four profiles. You can do this by clicking on the ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png) dropdown and select the name of the branch that has all the profiles. 
+* The first step is to go to the forked repo.
+* The next step is to navigate to the branch with all three or four profiles. You can do this by clicking on the ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png) dropdown and select the name of the branch that has all the profiles.
 * From this new view, click on ![pull request](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/pull-request.png) on the right-hand menu. The green button with two arrows that looks like this ![green pull request](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/green-button.png) will also work.
 * On this new page, click the green button that says "New pull request". This will take you to a form.
 Fill out the form and click "Submit".
 
-Congratulations, you've completed your first assignment! 
+Congratulations, you've completed your first assignment!
 
 Note: From now on, most assignments will be completed in a group but submitted individually. This means that instead of having a **table** fork an assignment, **each student** will fork the assignment, minimizing the merge conflicts you'll encounter in the future.
 
