@@ -6,7 +6,7 @@ resources:
 
 ## Getting to Know You...
 
-For our first class project, we will be creating a student directory with your very own student profile.
+For our first class project, we will be creating a student directory with profiles for everyone in the class.
 
 Fork and clone this project to get started. We'll walk through the code together as a class.
 
@@ -42,22 +42,22 @@ The structure of this project looks something like this:
   * A background picture
   * A picture for the index page
   * A picture for the profile page
-* Add one HTML file to the `students/` folder. Use the `student_name.html` for reference. In fact, feel free to copy as much of the HTML from `student_name.html` into the new file you've created (just don't rename / override that file, as that will cause you some git headaches).
+* Add one HTML file to the `students/` folder. Copy the HTML from `student_name.html` into the new file you've created - you'll be using it as a template for your profile.
 
 ## Getting Started
 
-* [fork](https://help.github.com/articles/fork-a-repo) this repo then [clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png)
+[Fork](https://help.github.com/articles/fork-a-repo) and ![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png) this repo.
 
 Take a look at `index.html` and `students/student_name.html` in the browser. You can do this many ways but one is by opening finder and right clicking on index.html. Then click on "Open with" then the name of your favorite browser.
 
-* In this new branch, make a new HTML file in the `students/` folder. The file name should be the name of the student you're creating the profile for. Use the file `student_name.html` to see an example of what a profile's HTML could look like.
+* Make a new HTML file in the `students/` folder. The file name should be the name of the student you're creating the profile for.
   * For instance, we would create a file `zoe_perez.html` in the main `students` folder.
 
-* Still in this branch you created, add the three photos detailed above to the `img/students` folder. The student you're writing the profile for may have to email you their desired pictures or send you links to them, etc.
+* Add the three photos detailed above to the `img/students` folder. The student you're writing the profile for may have to email you their desired pictures or send you links to them, etc.
   * For instance, we would add the pictures titled `zoe_perez_background.jpg`, `zoe_perez_index.jpg`, and `zoe_perez_profile.jpg` to the `students` folder that is inside the `img` folder.
   * File endings are case senstive. When adding an \<image\> tag, make sure that the image source is identical to the name of the image file.
 
-* Once you've completed the profile, open up `index.html`. Use the prexisting template as a model and add a section for your fellow student.
+* Once you've completed the profile, open up `index.html`. Use the prexisting template as a model and add a section for your profile.
 
 #### Stage and Commit Changes
 
@@ -74,10 +74,7 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
 
 #### Push Up Your Branch
 
-* Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to a remote branch. This remote branch doesn't exist yet, you're going to create it by pushing.
-  * **NOTE: Do not push to master. Do not type anything that contains the word master!**
-  * You're going to push to a branch that is the same name as your local branch.
-    * For instance, if we're on the branch zoe-perez, we're going to push to zoe-perez.
+* Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to push up the changes to your repo.
 
 * To confirm this push worked you can do two things:
   * Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed.
