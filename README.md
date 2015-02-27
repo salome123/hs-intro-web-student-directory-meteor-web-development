@@ -8,23 +8,8 @@ resources:
 
 For our first class project, we will be creating a student directory with your very own student profile.
 
-Here is the info you'll need for your student profile.
+Fork and clone this project to get started. We'll walk through the code together as a class.
 
-* Name
-* Github Username
-* Blog Url (if they don't already have a blog it will be their-github-username.github.io)
-* Tagline
-* Profile Picture (something normal, a headshot, of a good reusable size that can be easily cropped)
-* Background Picture
-* Treehouse Account
-* CoderWall Account
-* CodeSchool Account
-* Favorite Websites
-* Previous Work Experience
-* Short Bio
-* Twitter URL
-* LinkedIn URL
-* Education
 
 ## Structure
 
@@ -61,37 +46,9 @@ The structure of this project looks something like this:
 
 ## Getting Started
 
-### Group Logistics
-* Figure out who is going to write whose profile.
-
-* ![fork](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/fork.png)
-* Have one person at your table [fork](https://help.github.com/articles/fork-a-repo) this repo. This person should then send the link to their fork to everyone sitting at their table.
-* The person who forked the repo must add all team members as collaborators. Learn more about that [here](https://help.github.com/articles/adding-collaborators-to-a-personal-repository/).
-
-* ![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png)
-* Everyone at the table should then [clone](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository) this forked repo.
-
-### Individual Instructions
-
-Now that you have the repo, you'll want to get into it. Remember [cd](http://linux.about.com/od/commands/a/Example-Uses-Of-The-Command-Cd.htm)? When you type `pwd` into your terminal and the last part of the text that gets returned is `deploy-on-day-1...` you're in the right place. **NOTE In all the hypothetical examples, we're writing a profile for Zoe Perez.**
+* [fork](https://help.github.com/articles/fork-a-repo) this repo then [clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png)
 
 Take a look at `index.html` and `students/student_name.html` in the browser. You can do this many ways but one is by opening finder and right clicking on index.html. Then click on "Open with" then the name of your favorite browser.
-
-#### Make a New Branch
-
-* From the root directory, [checkout a new branch](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Branching). This new branch's name should be the name of the student whose profile you're going to create.
-  * For instance, the branch would be titled `zoe-perez`.
-  * Note: The `master` branch of a project is NEVER a place to do any work. `master` is considered the build and you never break the build. So make sure you are not working or committing to the `master` branch.
-
-* If you haven't already, switch to the branch you created. To make sure you're where you need to be, type `git branch` in your terminal. It should return the name of your assigned student emphazised with an asterisk and master.
-  * For instance, typing `pwd` in the terminal would return:
-
-```text
-  master
-* zoe-perez
-```
-
-#### Add Profile
 
 * In this new branch, make a new HTML file in the `students/` folder. The file name should be the name of the student you're creating the profile for. Use the file `student_name.html` to see an example of what a profile's HTML could look like.
   * For instance, we would create a file `zoe_perez.html` in the main `students` folder.
@@ -126,54 +83,16 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
   * Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed.
   * You could also go to the url of the forked repo. Notice the section that looks like ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png). You should be able to click on that arrow and to see a dropdown. From this dropdown, select the name of the branch you've been working on.
 
-## Next Steps
-
-### Group Logistics
-
-Since your table is going to submit a pull request with all of your tables profiles, you'll need to merge every branch that your table created into a single branch. This branch will contain every profile from your table. The process of merging these branches will probably result in merge conflicts in `index.html` and possibly elsewhere. That's totally okay and expected!
-
-Think about the best way to merge all the branches together. Should one person do it? Should everyone do it in order? Should you merge into a prexisting branch, like `master`, or create a totally new branch? You might be wondering what the best answer is but there isn't a "best answer", just decide on a strategy and go for it!
-
-### Merge Conflicts
-
-When [merging](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Merging), [merge conflicts](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging#Basic-Merge-Conflicts) can happen. Generally they look like:
-
-```text
-> git branch
-  └── master
-> git merge zoe-perez
-  └── Auto-merging index.html
-  └── CONFLICT (content): Merge conflict in index.html
-  └── Automatic merge failed; fix conflicts and then commit the result.
-```
-
-This just means that you will have to open the files where there are merge conflicts, in this case `index.html`, and find the part that looks like:
-
-```text
-<<<<<<< HEAD
-content here
-=======
-other content here
->>>>>>> zoe-perez
-```
-
-Just decide which one you want to keep or if you want to keep both. Then delete the parts you don't want and delete the `<<<<HEAD`, `======`, and `>>>>>` parts.
-
-Remember, if you have multiple files with merge conflicts, you'll have to repeat this process with each file. Once you're done selecting which code to retain, `git add` and `git commit` these changes. Now when you type `git status`, your terminal should not display "You have unmerged paths."
-
 ## Final Steps
 
-Once every profile is on a single branch that is hosted remotely, it's time to submit a pull request on the original repo. Note: This pull request will be on behalf of your entire table.
+It's time to submit a pull request on the original repo.
 
-* The first step is to go to the forked repo.
-* The next step is to navigate to the branch with all three or four profiles. You can do this by clicking on the ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png) dropdown and select the name of the branch that has all the profiles.
+* The first step is to go to the forked repo on your account.
 * From this new view, click on ![pull request](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/pull-request.png) on the right-hand menu. The green button with two arrows that looks like this ![green pull request](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/green-button.png) will also work.
 * On this new page, click the green button that says "New pull request". This will take you to a form.
 Fill out the form and click "Submit".
 
 Congratulations, you've completed your first assignment!
-
-Note: From now on, most assignments will be completed in a group but submitted individually. This means that instead of having a **table** fork an assignment, **each student** will fork the assignment, minimizing the merge conflicts you'll encounter in the future.
 
 ## Resources
 
