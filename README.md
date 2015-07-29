@@ -1,8 +1,4 @@
----
-tags: deploy, team, git, pull request, kids
-languages: html, css
-resources:
----
+
 
 ## Getting to Know You...
 
