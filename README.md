@@ -1,5 +1,3 @@
-
-
 ## Getting to Know You...
 
 For our first class project, we will be creating a student directory with profiles for everyone in the class.
@@ -44,20 +42,26 @@ The structure of this project looks something like this:
 
 [Fork](https://help.github.com/articles/fork-a-repo) and clone ![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png) this repo.
 
-Take a look at `index.html` and `students/student_name.html` in the browser. You can do this many ways but one is by opening finder and right clicking on index.html. Then click on "Open with" then the name of your favorite browser.
+Take a look at `index.html` and `students/student_name.html` in the browser. You can do this by entering in terminal e
 
 * Make a new HTML file in the `students/` folder. The file name should be the name of the student you're creating the profile for.
   * For instance, we would create a file `zoe_perez.html` in the main `students` folder.
 
 * Add the three photos detailed above to the `img/students` folder. The student you're writing the profile for may have to email you their desired pictures or send you links to them, etc.
   * For instance, we would add the pictures titled `zoe_perez_background.jpg`, `zoe_perez_index.jpg`, and `zoe_perez_profile.jpg` to the `students` folder that is inside the `img` folder.
-  * File endings are case senstive. When adding an \<image\> tag, make sure that the image source is identical to the name of the image file.
+  * File endings are case sensitive. When adding an `<image\>` tag, make sure that the image source is identical to the name of the image file.
 
-* Once you've completed the profile, open up `index.html`. Use the prexisting template as a model and add a section for your profile.
+* Once you've completed the profile, open up `index.html`. Use the preexisting template as a model and add a section for your profile.
+
+### Bonus
+
+Once you've finished all the text and image changes to your own student page, feel free to make the page your own. Think about how you can add other HTML elements to your page. 
+
+Already familiar with HTML and CSS? Take a stab at the styling of the page. Try changing the background colors, fonts, and text colors. This is your chance to make your mark, so make it bold!
 
 #### Stage and Commit Changes
 
-* Once you're happy with the profile you've created and the changes you've made to the index page, type [git status](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files). The the file you've altered, index.html, should appear in the "Tracked Files" section and the files you've created should appear in the "Untracked Files" section.
+* Once you're happy with the profile you've created and the changes you've made to the index page, type [git status](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files). The the file you've altered, `index.html`, should appear in the "Tracked Files" section and the files you've created should appear in the "Untracked Files" section.
 
 * You'll want to [add](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Staging-Modified-Files) then [commit](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Committing-Your-Changes) these changes with a message.
 
