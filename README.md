@@ -61,9 +61,11 @@ Already familiar with HTML and CSS? Take a stab at the styling of the page. Try 
 
 #### Stage and Commit Changes
 
-* Once you're happy with the profile you've created and the changes you've made to the index page, type [git status](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files). The the file you've altered, `index.html`, should appear in the "Tracked Files" section and the files you've created should appear in the "Untracked Files" section.
+* Once you're happy with the profile you've created and the changes you've made to the index page, enter `git status` in terminal. The the files you've altered, `index.html`, should appear in the "Tracked Files" section and the files you've created (like the images) should appear in the "Untracked Files" section.
 
-* You'll want to [add](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Staging-Modified-Files) then [commit](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Committing-Your-Changes) these changes with a message.
+* Next, you'll need to enter `git add .` in terminal to add the files.
+
+* Last, you need to commit your work by entering in terminal `git commit -m "enter a description of your work here"`
 
 * If you type `git status`, you should see "nothing to commit, working directory clean". If you type `git remote -v`, it should display something like:
 
@@ -74,7 +76,7 @@ Already familiar with HTML and CSS? Take a stab at the styling of the page. Try 
 
 #### Push Up Your Branch
 
-* Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to push up the changes to your repo.
+* Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to push up the changes to your repo. Enter in terminal `git push origin branch-name`
 
 * To confirm this push worked you can do two things:
   * Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed.
